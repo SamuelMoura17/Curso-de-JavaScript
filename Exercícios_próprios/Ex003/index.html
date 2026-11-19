@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alistamento</title>
+    <style> /* CSS */
+
+        body{
+
+            background: linear-gradient(to right, #2c3e2d, #6b8e4e, #2c3e2d);
+            color: white;
+
+            font:  normal 1rem arial;
+
+        }
+
+    </style>
+</head>
+<body> <!-- HTML -->
+    
+    <h1>Alistamento Militar online (Exercício de prática)</h1>
+
+    <script> /* JavaScript */
+
+        var nome = prompt('Digite o seu nome: ')
+
+        var idade = prompt('Digite a sua idade: ')
+
+        if (idade >= 18 && idade <= 45) {
+
+            document.write(`Olá ${nome}, como você tem ${idade} anos, você já pode se preparar para o alistamento obrigatório!`)
+
+        }
+
+        else{
+
+            document.write(`Olá ${nome}, como você tem ${idade} anos, você não pode participar do alistamento obrigatório!`)
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculado Básica</title>
+    <style> /* CSS */
+
+        body{
+
+            background-color: rgb(112, 108, 108);
+            color: white;
+
+            font: normal 1rem arial;
+
+        }
+
+        h1{
+
+            text-decoration: underline;
+
+        }
+
+    </style>
+</head>
+<body> <!-- HTML -->
+    
+    <h1>Calculadora básica</h1>
+
+    <script> /* JavaScript*/
+
+        var nome = prompt('Digite o seu nome: ');
+
+        var n1 = parseFloat(prompt('Digite o primeiro número: '));
+
+        var operação = prompt('Digite a operação desejada(+-*/): ');
+
+        var n2 = parseFloat(prompt('Digite o segundo número: '));
+
+        if (operação === '+'){
+
+            var s = n1 + n2
+
+        }
+
+        else if (operação === '-'){
+
+            var s = n1 - n2 
+
+        }
+
+        else if (operação === '*'){
+
+            var s = n1 * n2 
+
+        }
+
+        else if (operação === '/'){
+
+            var s = n1 / n2 
+
+        }
+
+        else{
+
+            document.write('Operação inválida')
+
+        }
+
+        document.write(`${nome}, o resultado da operação: ${n1} ${operação} ${n2} é igual a = ${s}`);
+
+    </script>
+
+</body>
+</html>
